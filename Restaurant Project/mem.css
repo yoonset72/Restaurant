@@ -1,0 +1,118 @@
+body{
+    height: 200vh;
+    width: 80%;
+    background : url(memimg.png);
+    background-position: center;
+    background-size: cover;
+   background-repeat: no-repeat;
+   overflow-x: hidden;
+   }
+.bene{
+    width: 50%;
+    padding: 0;
+    margin-left: 8% ;
+}
+.eveheader{
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: 'Friz Quadrata';
+    color: #AF996E;
+    display: flex;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .evep{
+    width: 80%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Friz Quadrata';
+    font-weight: bold;
+    line-height: 1.5;
+  }
+.st{
+    margin-top: 5%;
+}
+.rank{
+    font-size: 18px;
+    font-family: 'Friz Quadrata';
+    color: #AF996E;
+    display: flex;
+    font-weight: bold;
+    line-height: 2.5;
+
+}
+.nd{
+    margin-top: 20px;
+} 
+.rd{
+    margin-top: 20px;
+}
+.def{
+    font-size: 14px;
+    color: white;
+    font-family: 'Friz Quadrata';
+    font-weight: bold;
+    line-height: 1.2;
+}
+.note{
+    width: 30%;
+    margin-top: 5%;
+}
+.node{
+    line-height: 1;
+    font-size: 12px;
+    color: white;
+    font-family: 'Friz Quadrata';
+
+}
+.line{
+    width:70%;
+    height: 1px;
+    background-color: grey;
+    margin-top: 3%;
+    margin-left:0%;
+  
+  }
+  .sidelogo {
+    margin: 15px;
+  }
+  .sidelogo img {
+    display: flex;
+    width: 28%;
+    margin-left: 140%;
+    margin-top: -180%;
+  }
+
+  .na {
+    width: 150%;
+    height: 60px;
+    background-color: #AF996E;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:-8px ;
+}
+ 
+.back {
+    margin-left: 2%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 4;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+ 
+.back i:hover {
+    color: #999999;
+}
+ 
+.back i {
+    color: #FFFFFF;
+    font-size: 35px;
+}

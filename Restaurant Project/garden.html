@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo3.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediastyle.css">
+
+  <title>Garden Restaurant</title>
+  <style>
+    body {
+      height: 127vh;
+      width: 100%;
+      background: white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+    }
+
+    .titi {
+      margin-top: -2%;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-family: 'Friz Quadrata';
+      font-weight: bold;
+      width: 100%;
+      margin-top: 13%;
+      text-align: left;
+      margin-left: 30%;
+    }
+
+    p {
+      font-family: 'Friz Quadrata';
+      margin-top: 30px;
+      text-align: left;
+      text-decoration: none;
+      font-size: 18px;
+      word-spacing: 2px;
+      line-height: 30px;
+      width: 55%;
+      margin-left: 30%;
+
+
+    }
+
+    .garlink {
+      font-family: 'Friz Quadrata';
+      text-decoration: none;
+      color: chocolate;
+      margin-left: 30%;
+      line-height: 7;
+
+    }
+
+    .gar {
+      margin-top: 5%;
+      display: flex;
+      width: 100%;
+    }
+
+    .garimg {
+      flex: 0 0 40%;
+      margin: 15px;
+    }
+
+    .garimg img {
+      display: flex;
+      width: 60%;
+      margin-left: 40%;
+      border-top-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    @media (max-width:769px) {
+      .garimg img {
+        margin-top: 8%;
+        margin-right: -5%;
+
+
+      }
+
+      .titi h1 {
+        font-size: 20px;
+      }
+
+      .titi p {
+        font-size: 14px;
+        width: 90%;
+        margin-top: 5px;
+
+      }
+
+
+
+      .garlink {
+        font-size: 12px;
+      }
+
+
+    }
+
+    @media (max-width:641px) {
+      .garimg img {
+        margin-top: 8%;
+        margin-right: -5%;
+
+
+      }
+
+      .titi h1 {
+        font-size: 20px;
+      }
+
+      .titi p {
+        font-size: 14px;
+        width: 90%;
+        margin-top: 5px;
+
+      }
+
+
+
+      .garlink {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width:426px) {
+      .garimg img {
+        margin-top: 8%;
+        margin-right: -5%;
+
+
+      }
+
+      .titi h1 {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .titi p {
+        font-size: 10px;
+        width: 90%;
+        margin-top: 5px;
+
+      }
+
+      .garlink {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width:376px) {
+      .titi h1 {
+        font-size: 14px;
+      }
+
+      .titi p {
+        font-size: 8px;
+        width: 90%;
+        margin-top: 5px;
+      }
+
+      .garimg img {
+        height: 40%;
+        display: flex;
+        width: 50%;
+        margin-top: 20%;
+      }
+
+      .garlink {
+        font-size: 8px;
+      }
+    }
+
+    @media (max-width:321px) {
+      .titi h1 {
+        font-size: 12px;
+      }
+
+      .titi p {
+        font-size: 8px;
+        width: 90%;
+        margin-top: 5px;
+      }
+
+      .garimg img {
+        height: 40%;
+        display: flex;
+        width: 50%;
+        margin-top: 20%;
+      }
+
+      .garlink {
+        font-size: 8px;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="navigation">
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+            <path
+              d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+          </svg></a></li>
+      <li> <a href="" class="me" id="res">Reservations </a>
+      </li>
+      <li> <a href="" class="me" id="me">Menus </a>
+      </li>
+      <li> <a href="" class="me" id="rest">Restaurant</a>
+      </li>
+      <li> <a href="" class="me" id="event">Events</a>
+      </li>
+      <li> <a href="" class="me" id="gar">Member</a>
+      </li>
+      <li> <a href="" class="me" id="gift">Gift Cards</a>
+      </li>
+      <li> <a href="" class="me" id="cont">Contact</a>
+      </li>
+      <li> <a href="" class="me" id="pro">Profile</a>
+      </li>
+
+    </ul>
+    <div class="right">
+      <li class="hideOnMobile"> <a href="res.html" class="menu" id="res">Reservations </a></li>
+      <li class="hideOnMobile"> <a href="menu.html" class="menu" id="me">Menus </a> </li>
+      <li class="hideOnMobile"><a href="restaurant.html" class="menu" id="rest">Restaurant</a></li>
+      <li class="hideOnMobile"> <a href="events.html" class="menu" id="event">Events</a></li>
+
+    </div>
+
+    <div>
+      <img class="midd" id="logo" src="lulogo.png">
+    </div>
+
+    <div class="left">
+      <li class="hideOnMobile"> <a href="garden.html" class="menu" id="gar">Member</a></li>
+      <li class="hideOnMobile"> <a href="card.html" class="menu" id="gift">Gift Cards</a></li>
+      <li class="hideOnMobile"><a href="contact.html" class="menu" id="cont">Contact</a></li>
+      <li class="hideOnMobile"><a href="login.html" class="menu" id="pro">Profile</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36"
+            viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></a></li>
+
+    </div>
+  </div>
+  </div>
+  <section>
+    <div class="gar">
+      <div class="titi">
+        <h1>Be a Garden member</h1>
+        <p>Join Garden's unique inner circle. Enjoy the advantages of Garden restaurant. </p>
+        <p>Garden's invitation-only rewards program for our most loyal clients.</p>
+        <a href="memmenu.html" class="garlink">Program Benefits</a>
+
+      </div>
+      <div class="garimg"><img src="garimg.png"></div>
+    </div>
+  </section>
+  <section class="bot">
+    <div class="award">
+      <div class="awards">Awards</div>
+      <div class="botext">
+        <h2>Rangoon's most awarded restaurant</h2>
+      </div>
+      <div class="container">
+        <div class="slider-wrapper">
+
+          <ul class="image-list">
+            <img class="image-item" src="https://sonorestaurant.com.au/wp-content/uploads/2023/10/Award-2023.png"
+              alt="img-1" />
+            <img class="image-item" src="https://sonorestaurant.com.au/wp-content/uploads/2023/01/agfg-award-1.png"
+              alt="img-2" />
+            <img class="image-item" src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/The-Fork-Top-100.png"
+              alt="img-3" />
+            <img class="image-item"
+              src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/Wine-List-Award-2022.png" alt="img-4" />
+            <img class="image-item"
+              src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/Wine-List-Award-2022.png" alt="img-5" />
+            <img class="image-item"
+              src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/Savour-Finalist-Best-Japanese-2022.png"
+              alt="img-6" />
+            <img class="image-item"
+              src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/Wine-List-Award-2021.png" alt="img-1" />
+            <img class="image-item"
+              src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/Savour-Finalist-Best-Japanese-2022.png"
+              alt="img-6" />
+            <img class="image-item"
+              src="https://sonorestaurant.com.au/wp-content/uploads/2022/11/Wine-List-Award-2021.png" alt="img-1" />
+
+          </ul>
+
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="story">
+        <div class="stimg"><img src="Story.png"></div>
+        <div>
+          <h3 class="storytext">Story</h3>
+          <p class="ptext">Garden began with a simple idea: to create a dining experience that celebrates great food and
+            brings people together.</p>
+          <p class="ptext">
+            Our journey started in 1940 with a passion for flavor and a commitment to quality.
+          </p>
+          <p class="ptext">At Garden, every meal is a story waiting to be savored join us and taste the difference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="para">
+    <div class="container">
+      <div class="us">
+        <div>
+          <h3 class="Abouttext">About us</h3>
+          <p class="ustext">Welcome to Garden, where passion meets plate. Since 1940, we've been crafting unforgettable
+            dining experiences with locally-inspired, globally-flavored dishes.</p>
+          <p class="ustext">
+            Join us for exceptional cuisine, warm hospitality, and memorable moments.
+          </p>
+          <p class="ustext">At Garden, it's not just about the food ,it's about creating lasting memories.</p>
+        </div>
+        <div class="usimg"><img src="About us.png"></div>
+      </div>
+
+      <div class="location">
+        <div class="loimg"><img src="location.png"></div>
+        <div>
+          <h3 class="loctext">Location</h3>
+          <p class="lotext">Ahlone Rd near Pyay Rd, Yangon (Rangoon), Myanmar</p>
+          <p class="lotext">+95 9782118171 ,contact @garden.com.au</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <div class="container">
+      <div class="slider-wrapper">
+
+        <ul class="image-listt">
+          <img class="image-item" src="https://i.pinimg.com/236x/03/e9/9f/03e99f70436a2863e0446bed9d372239.jpg"
+            alt="img-1" />
+          <img class="image-item" src="https://i.pinimg.com/236x/98/f9/55/98f95573df48c40f2cf42c62aa15dcdd.jpg"
+            alt="img-2" />
+          <img class="image-item" src="https://i.pinimg.com/236x/ae/36/ae/ae36ae29199d37cee3075cc618e392cb.jpg"
+            alt="img-3" />
+          <img class="image-item" src="https://i.pinimg.com/236x/54/de/69/54de690db6ac0b7a1858e6a132ea9954.jpg"
+            alt="img-4" />
+          <img class="image-item" src="https://i.pinimg.com/236x/16/2f/f5/162ff533e889a31f89b9e9cd88667039.jpg"
+            alt="img-5" />
+          <img class="image-item" src="https://i.pinimg.com/236x/d1/fb/af/d1fbaf72d37120f5222d134a2da81533.jpg"
+            alt="img-6" />
+
+        </ul>
+
+      </div>
+      <div><a href="" class="ig">See more @garden_restaurant</a>
+
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="adwar.js"></script>
+
+</body>
+
+</html>

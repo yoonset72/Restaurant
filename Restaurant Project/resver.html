@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="res.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div class="na">
+            <a href="index.html" class="back">
+                <i class='bx bx-arrow-back'></i>
+            </a>
+        </div>
+        
+        <section class = "banner">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                   
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                          <input class="datepicker" type="text" id="datepicker" placeholder="Date">
+
+                            <select name = "hours" id="time">
+                                <option value = "hour-select">Select Hour</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" id="name" placeholder="Full Name">
+                            <input type = "text" id="number" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" id="person" placeholder="How Many Persons?" min = "1">
+                            <input type = "submit" value = "BOOK TABLE" id="book-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script>
+            $(document).ready(function(){
+                $( function() {
+              $( "#datepicker" ).datepicker({
+                minDate: 0
+              });
+            } );
+
+            $('#book-btn').click(function(){
+                var date = $('#datepicker').datepicker('getDate');
+                var book_date = $.datepicker.formatDate('yy/mm/dd', date);
+                var hours = $('#hours').val();
+                var name = $('#name').val();
+                var number = $('#number').val();
+                var person = $('#person').val();
+
+                $.ajax({
+                    method: 'POST',
+                    url: "API/booking_API.php",
+                    data: {book_date: book_date, hours: hours, name: name, number: number, person: person},
+                    dataType: 'JSON'
+                })
+            })
+            })
+        </script>
+            
+        
+    </body>
+</html>

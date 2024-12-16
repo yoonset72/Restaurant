@@ -1,0 +1,225 @@
+
+body{
+    height: 300vh;
+    width: 100%;
+    background : white;
+    background-position: center;
+    background-size: cover;
+   background-repeat: no-repeat;
+   overflow-x: hidden;
+
+   }
+   .container{
+    width: 70%;
+    margin: auto;
+    transition: 0.5s;
+}
+h1{
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    color: #AF996E;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: #453E3B;
+    
+
+}
+.levelsection {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.na {
+    margin-top: 10px;
+    width: 5%;
+    height: 50px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.go{
+    margin-left: 45px;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+ 
+.back {
+    margin-left: 2%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 4;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+ 
+.back i:hover {
+    color: #999999;
+}
+ 
+.back i {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+   .container{
+    width: 70%;
+    margin: auto;
+    transition: 0.5s;
+}
+header{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 5%  ;
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+    margin-top: 50px;
+}
+header .shopping img{
+    width: 40px;
+    
+}
+header .shopping .cart_logo{
+  margin-left: 10%;
+}
+header .shopping span{
+    background: #AF996E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 20px 10px #757676;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #AF996E;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.list .item button:hover {
+  background-color: #888;
+  color: #fff;
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    font-weight: bold;
+    color: #AF996E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #AF996E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: white;
+    color: #AF996E;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 70%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+.entrees{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
+    color: #AF996E;
+    width: 10%;
+    height: 40px;
+    align-items: center;
+}
